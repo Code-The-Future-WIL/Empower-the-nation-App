@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#fff6ea"
+
+    tools:context=".MainActivity2">
+
+    <!-- Top bar layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <!-- Logo on the top left -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/applogo"
+            android:contentDescription="App Logo"
+            android:layout_marginTop="10dp" />
+
+        <!-- Contact button on top right -->
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/img"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Map Button"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Heading centered between logo and contact button -->
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMPOWERING THE\nNATION"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textBoxOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Details"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:background="#6ba368" />
+    <TextView
+        android:id="@+id/businessNumberText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business Number:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textBoxTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="291 119 5122"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#6ba368"
+        android:padding="10dp"
+        android:layout_marginRight="120dp" />
+
+    <TextView
+        android:id="@+id/emailAddressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textBoxThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="empoweringthenation@gmail.com"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#6ba368"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textBoxFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 463 Main Street, Sandton, Johannesburg\n- 33 Rose Avenue, Melville, Johannesburg\n- 24 Market Road, Soweto, Johannesburg"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#6ba368"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_1"
+            android:layout_marginTop="90dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

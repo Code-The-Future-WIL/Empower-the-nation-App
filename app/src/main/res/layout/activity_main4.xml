@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#fff6ea"
+
+    tools:context=".MainActivity2">
+
+    <!-- Top bar layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <!-- Logo on the top left -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/applogo"
+            android:contentDescription="App Logo"
+            android:layout_marginTop="10dp" />
+
+        <!-- Contact button on top right -->
+        <ImageButton
+            android:id="@+id/contactButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/img_2"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Contact Button"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Heading centered between logo and contact button -->
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMPOWERING THE\nNATION"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textBoxOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Aid"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:background="#ff7d7d"
+        />
+
+    <TextView
+        android:id="@+id/feesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fees:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textBoxTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R1 500"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#ff7d7d"
+        android:padding="10dp"
+        android:layout_marginRight="150dp" />
+
+    <TextView
+        android:id="@+id/purposeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purpose:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textBoxThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To provide first aid awareness and basic \n life support."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#ff7d7d"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/contentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textBoxFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Wounds and bleeding. \n2.Burns and fractures.\n3.Emergency scene management.\n4.Cardio-Pulmonary Resuscitation.         \n5.Respiratory distress."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#ff7d7d"
+        android:padding="10dp" />
+
+    <!-- Bottom bar with Back (left) and Calculate Fees (right) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="10dp">
+
+        <!-- Back button - bottom left -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/img_1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back" />
+
+        <!-- Calculate Fees button - bottom right -->
+        <Button
+            android:id="@+id/calculateFeesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Fees"
+            android:textColor="#000000"
+            android:backgroundTint="#ff7d7d"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
