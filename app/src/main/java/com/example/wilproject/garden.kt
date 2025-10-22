@@ -11,9 +11,9 @@ class garden : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_garden) // Added missing parenthesis
+        setContentView(R.layout.activity_garden)
 
-        // Initialize views - CORRECTED IDs to match XML
+        // Initialize views
         val courseNameText = findViewById<TextView>(R.id.textBoxOne)
         val feesText = findViewById<TextView>(R.id.feesText)
         val feeAmountText = findViewById<TextView>(R.id.textBoxTwo)

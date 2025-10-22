@@ -36,7 +36,7 @@ class sixWeekCourses : AppCompatActivity() {
         contactButton: ImageButton,
         backButton: ImageButton
     ) {
-        // Navigate to First Aid course details
+
         // Navigate to Child Minding course details
         childMindingButton.setOnClickListener {
             val intent = Intent(this, childMinding::class.java)
@@ -54,7 +54,7 @@ class sixWeekCourses : AppCompatActivity() {
             startActivity(intent)
         }
 
-// Navigate to Cooking course details
+        // Navigate to Cooking course details
         cookingButton.setOnClickListener {
             val intent = Intent(this, cooking::class.java)
             intent.putExtra("course_name", "Cooking")
@@ -71,7 +71,7 @@ class sixWeekCourses : AppCompatActivity() {
             startActivity(intent)
         }
 
-// Navigate to Garden Maintenance course details
+       // Navigate to Garden Maintenance course details
         gardenMaintenanceButton.setOnClickListener {
             val intent = Intent(this, garden::class.java)
             intent.putExtra("course_name", "Garden Maintenance")
