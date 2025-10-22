@@ -240,7 +240,7 @@
             android:background="@android:color/transparent"
             android:contentDescription="Back" />
 
-        <!-- Request Consultation button - bottom right -->
+        <!-- Request Consultation button -->
         <Button
             android:id="@+id/calculateFeesButton"
             android:layout_width="wrap_content"
