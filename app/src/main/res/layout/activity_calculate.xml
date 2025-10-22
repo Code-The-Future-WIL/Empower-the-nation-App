@@ -169,7 +169,7 @@
                     android:layout_marginBottom="4dp"/>
             </LinearLayout>
 
-
+            <!-- Calculate Button and Total Display Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -179,28 +179,46 @@
                 android:background="#f0f0f0"
                 android:layout_marginBottom="20dp">
 
-                <TextView
+                <!-- Calculate Fees Button -->
+                <Button
+                    android:id="@+id/calculateTotalButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Total Fees: "
-                    android:textSize="18sp"
-                    android:textStyle="bold"
+                    android:text="Calculate Fees"
                     android:textColor="#000000"
-                    android:padding="8dp" />
-
-                <TextView
-                    android:id="@+id/totalFeesText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="R0"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
+                    android:backgroundTint="#6ba368"
+                    android:textSize="16sp"
                     android:padding="12dp"
-                    android:background="#ffffff"
-                    android:layout_marginStart="10dp"
-                    android:minWidth="120dp"
-                    android:gravity="center"/>
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Total Display -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Fees:"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/totalFeesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R0"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:padding="8dp"
+                        android:background="#ffffff"
+                        android:minWidth="120dp"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

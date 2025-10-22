@@ -119,7 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom">
 
-        <!-- Your back icon -->
+        <!--  back icon -->
         <ImageButton
             android:id="@+id/backButton"
             android:layout_width="60dp"

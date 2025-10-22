@@ -95,7 +95,7 @@ class garden : AppCompatActivity() {
             "Child Minding" -> "#f6c6fa"
             "Cooking" -> "#ff99d8"
             "Garden Maintenance" -> "#bfecac"
-            else -> "#bfecac" // Default to Garden Maintenance color
+            else -> "#bfecac"
         }
 
         val color = android.graphics.Color.parseColor(colorString)

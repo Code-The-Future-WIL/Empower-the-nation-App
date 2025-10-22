@@ -118,6 +118,12 @@ class sixMonthCourses : AppCompatActivity() {
         }
     }
 
+     // CODE ATTRIBUTION :
+    // Title: Intents and Intent Filters
+    //  Author: Android Developers, 2025
+    //  Date: 5 October 2025
+    // Available at: https : developer.android.com/guide/components/intents-filters
+
     override fun onResume() {
         super.onResume()
         // Any additional setup when returning to this screen

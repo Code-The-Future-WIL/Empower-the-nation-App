@@ -125,6 +125,6 @@ class childMinding : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // Any additional setup when returning to this screen
+
     }
 }
