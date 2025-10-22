@@ -46,7 +46,10 @@
             android:id="@+id/descriptionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Empowering the Nation provides practical skills training for domestic workers and gardeners, helping them grow, find better job opportunities, and even start their own businesses. Founded by Precious Radebe, we offer accessible short- and long-term courses that uplift communities and support employers in building skilled teams."
+            android:text="Empowering the Nation provides practical skills training for domestic workers and gardeners,
+             helping them grow, find better job opportunities, and even start their own businesses. Founded by Precious Radebe,
+              we offer accessible short- and long-term courses that uplift communities and support employers in
+              building skilled teams."
             android:padding="15dp"
             android:textSize="20sp"
             android:textAlignment="center"
