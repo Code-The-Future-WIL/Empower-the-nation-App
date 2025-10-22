@@ -10,7 +10,7 @@
     android:gravity="center_horizontal"
     android:background="#fff6ea"
 
-    tools:context=".MainActivity2">
+    tools:context=".lifeSkills">
 
     <!-- Top bar layout -->
     <RelativeLayout
@@ -58,13 +58,13 @@
         android:id="@+id/textBoxOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cooking"
+        android:text="Life Skills"
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#000000"
         android:padding="16dp"
-        android:background="#ff99d8"
+        android:background="#fff8bd"
         />
 
     <TextView
@@ -80,11 +80,11 @@
         android:id="@+id/textBoxTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R 750"
+        android:text="R1 500"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#ff99d8"
+        android:background="#fff8bd"
         android:padding="10dp"
         android:layout_marginRight="150dp" />
 
@@ -101,11 +101,11 @@
         android:id="@+id/textBoxThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To prepare and cook nutritious family    \nmeals."
+        android:text="To provide skills to navigate basic life   \nnecessities."
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#ff99d8"
+        android:background="#fff8bd"
         android:padding="10dp" />
 
     <TextView
@@ -121,12 +121,12 @@
         android:id="@+id/textBoxFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1.Nutritional requirements for a healthy \nbody. \n2.Types of protein, carbohydrates and \nvegetables. \n3.Planning meals. \n4.Tasty and nutritious recipes. \n5.Preparation and cooking meals."
+        android:text="1.Opening a bank account.\n2.Basic labour law. \n3.Basic reading and writing literacy.      \n4.Basic numeric literacy."
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#ff99d8"
-         />
+        android:background="#fff8bd"
+        android:padding="10dp" />
 
     <!-- Bottom bar with Back (left) and Calculate Fees (right) -->
     <RelativeLayout
@@ -152,7 +152,7 @@
             android:layout_height="wrap_content"
             android:text="Calculate Fees"
             android:textColor="#000000"
-            android:backgroundTint="#ff99d8"
+            android:backgroundTint="#fff8bd"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"/>

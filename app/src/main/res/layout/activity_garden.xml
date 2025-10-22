@@ -10,7 +10,7 @@
     android:gravity="center_horizontal"
     android:background="#fff6ea"
 
-    tools:context=".MainActivity2">
+    tools:context=".garden">
 
     <!-- Top bar layout -->
     <RelativeLayout
@@ -58,13 +58,13 @@
         android:id="@+id/textBoxOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Landscaping"
+        android:text="Garden Maintenance"
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#000000"
         android:padding="16dp"
-        android:background="#c4a092"
+        android:background="#bfecac"
         />
 
     <TextView
@@ -80,11 +80,11 @@
         android:id="@+id/textBoxTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="R1 500"
+        android:text="R 750"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#c4a092"
+        android:background="#bfecac"
         android:padding="10dp"
         android:layout_marginRight="150dp" />
 
@@ -101,11 +101,11 @@
         android:id="@+id/textBoxThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To provide landscaping services for new\n and established garden."
+        android:text="To provide basic knowledge of watering,\npruning and planting in a domestic \ngarden."
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#c4a092"
+        android:background="#bfecac"
         android:padding="10dp" />
 
     <TextView
@@ -121,12 +121,12 @@
         android:id="@+id/textBoxFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1.Indigenous and exotic plants and trees.\n2.Fixed structuers.\n3.Balancing of plants and trees in a \n    garden.\n4.Aesthetics of plant shapes and colors. \n5.Garden layout."
+        android:text="1.Water restrictions and the watering \nrequirements of indigenous. \n2.Pruning and propagation of plants. \n3.Planting techniques for different plant \ntypes."
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#c4a092"
-        android:padding="10dp" />
+        android:background="#bfecac"
+        />
 
     <!-- Bottom bar with Back (left) and Calculate Fees (right) -->
     <RelativeLayout
@@ -152,7 +152,7 @@
             android:layout_height="wrap_content"
             android:text="Calculate Fees"
             android:textColor="#000000"
-            android:backgroundTint="#c4a092"
+            android:backgroundTint="#bfecac"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"/>

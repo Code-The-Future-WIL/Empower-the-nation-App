@@ -10,7 +10,7 @@
     android:gravity="center_horizontal"
     android:background="#fff6ea"
 
-    tools:context=".MainActivity2">
+    tools:context=".sixWeekCourses">
 
     <!-- Top bar layout -->
     <RelativeLayout
@@ -54,67 +54,58 @@
             android:layout_marginTop="20dp"/>
     </RelativeLayout>
 
-        <TextView
-            android:id="@+id/courseHeading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SIX-MONTH COURSES"
-            android:textSize="40sp"
-            android:textStyle="bold"
+    <TextView
+        android:id="@+id/courseHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIX-WEEK COURSES"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <!-- Button layout -->
+    <LinearLayout
+        android:id="@+id/courseButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/childMindingButton"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Child Minding"
+            android:textSize="25sp"
+            android:backgroundTint="#f6c6fa"
             android:textColor="#000000"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:textAlignment="center"
-            android:gravity="center"/>
+            android:layout_marginBottom="15dp"/>
 
-        <!-- Button layout -->
-        <LinearLayout
-            android:id="@+id/courseButtonsLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/cookingButton"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Cooking"
+            android:textSize="25sp"
+            android:backgroundTint="#ff99d8"
+            android:textColor="#000000"
+            android:layout_marginBottom="15dp"/>
 
-            <Button
-                android:id="@+id/firstAidButton"
-                android:layout_width="300dp"
-                android:layout_height="80dp"
-                android:text="First Aid"
-                android:textSize="25sp"
-                android:backgroundTint="#ff7d7d"
-                android:textColor="#000000"
-                android:layout_marginBottom="15dp"/>
+        <Button
+            android:id="@+id/gardenMaintenanceButton"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Garden Maintenance"
+            android:textSize="25sp"
+            android:backgroundTint="#bfecac"
+            android:textColor="#000000"
+            android:layout_marginBottom="15dp"/>
 
-            <Button
-                android:id="@+id/sewingButton"
-                android:layout_width="300dp"
-                android:layout_height="80dp"
-                android:text="Sewing"
-                android:textSize="25sp"
-                android:backgroundTint="#9bd4e4"
-                android:textColor="#000000"
-                android:layout_marginBottom="15dp"/>
-
-            <Button
-                android:id="@+id/landscapingButton"
-                android:layout_width="300dp"
-                android:layout_height="80dp"
-                android:text="Landscaping"
-                android:textSize="25sp"
-                android:backgroundTint="#c4a092"
-                android:textColor="#000000"
-                android:layout_marginBottom="15dp"/>
-
-            <Button
-                android:id="@+id/lifeSkillsButton"
-                android:layout_width="300dp"
-                android:layout_height="80dp"
-                android:text="Life Skills"
-                android:textSize="25sp"
-                android:backgroundTint="#fff8bd"
-                android:textColor="#000000"
-                android:layout_marginBottom="20dp"/>
-        </LinearLayout>
+    </LinearLayout>
     <!-- Push the following to bottom -->
     <RelativeLayout
         android:layout_width="match_parent"

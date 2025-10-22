@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff6ea"
+    tools:context=".calculate">
+
+    <!-- Top bar layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <!-- Logo on the top left -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/applogo"
+            android:contentDescription="App Logo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Contact button on top right -->
+        <ImageButton
+            android:id="@+id/contactButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/img_2"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Contact Button"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Heading centered between logo and contact button -->
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMPOWERING THE\nNATION"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <!-- ScrollView to make content scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:padding="12dp"
+                android:hint="Enter your full name"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:padding="12dp"
+                android:hint="Enter your phone number"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/emailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:padding="12dp"
+                android:hint="Enter your email address"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Courses:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkboxFirstAid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Aid (R1 500)"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkboxSewing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sewing (R1 500)"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkboxLandscaping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Landscaping (R1 500)"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkboxLifeSkills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Life Skills (R1 500)"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkboxChildMinding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Child Minding (R750)"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkboxCooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cooking (R750)"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkboxGardenMaintenance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Garden Maintenance (R750)"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+
+            <!-- Total Display Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="#f0f0f0"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Fees: "
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/totalFeesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="#ffffff"
+                    android:layout_marginStart="10dp"
+                    android:minWidth="120dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom buttons - Fixed at bottom -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#f5f5f5">
+
+        <!-- Back button - bottom left -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/img_1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back" />
+
+        <!-- Request Consultation button - bottom right -->
+        <Button
+            android:id="@+id/calculateFeesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Consultation"
+            android:textColor="#000000"
+            android:backgroundTint="#6ba368"
+            android:textSize="14sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:minWidth="120dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

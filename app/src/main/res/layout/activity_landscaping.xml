@@ -10,7 +10,7 @@
     android:gravity="center_horizontal"
     android:background="#fff6ea"
 
-    tools:context=".MainActivity2">
+    tools:context=".landscaping">
 
     <!-- Top bar layout -->
     <RelativeLayout
@@ -30,14 +30,14 @@
 
         <!-- Contact button on top right -->
         <ImageButton
-            android:id="@+id/mapButton"
+            android:id="@+id/contactButton"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_alignParentEnd="true"
-            android:src="@drawable/img"
+            android:src="@drawable/img_2"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:contentDescription="Map Button"
+            android:contentDescription="Contact Button"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp" />
 
@@ -53,22 +53,25 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="20dp"/>
     </RelativeLayout>
+
     <TextView
         android:id="@+id/textBoxOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contact Details"
+        android:text="Landscaping"
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#000000"
         android:padding="16dp"
-        android:background="#6ba368" />
+        android:background="#c4a092"
+        />
+
     <TextView
-        android:id="@+id/businessNumberText"
+        android:id="@+id/feesText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Business Number:"
+        android:text="Fees:"
         android:textSize="25sp"
         android:textStyle="bold"
         android:padding="10dp"/>
@@ -77,19 +80,19 @@
         android:id="@+id/textBoxTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="291 119 5122"
+        android:text="R1 500"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#6ba368"
+        android:background="#c4a092"
         android:padding="10dp"
-        android:layout_marginRight="120dp" />
+        android:layout_marginRight="150dp" />
 
     <TextView
-        android:id="@+id/emailAddressText"
+        android:id="@+id/purposeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email Address:"
+        android:text="Purpose:"
         android:textSize="25sp"
         android:textStyle="bold"
         android:padding="10dp"/>
@@ -98,19 +101,18 @@
         android:id="@+id/textBoxThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="empoweringthenation@gmail.com"
+        android:text="To provide landscaping services for new\n and established garden."
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#6ba368"
-        android:padding="10dp"
-        android:layout_marginRight="20dp"/>
+        android:background="#c4a092"
+        android:padding="10dp" />
 
     <TextView
-        android:id="@+id/addressText"
+        android:id="@+id/contentText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Address:"
+        android:text="Content:"
         android:textSize="25sp"
         android:textStyle="bold"
         android:padding="10dp"/>
@@ -119,25 +121,40 @@
         android:id="@+id/textBoxFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="- 463 Main Street, Sandton, Johannesburg\n- 33 Rose Avenue, Melville, Johannesburg\n- 24 Market Road, Soweto, Johannesburg"
+        android:text="1.Indigenous and exotic plants and trees.\n2.Fixed structuers.\n3.Balancing of plants and trees in a \n    garden.\n4.Aesthetics of plant shapes and colors. \n5.Garden layout."
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        android:background="#6ba368"
+        android:background="#c4a092"
         android:padding="10dp" />
 
+    <!-- Bottom bar with Back (left) and Calculate Fees (right) -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_alignParentBottom="true">
+        android:layout_gravity="bottom"
+        android:padding="10dp">
 
+        <!-- Back button - bottom left -->
         <ImageButton
             android:id="@+id/backButton"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_alignParentStart="true"
             android:src="@drawable/img_1"
-            android:layout_marginTop="90dp"/>
+            android:background="@android:color/transparent"
+            android:contentDescription="Back" />
 
+        <!-- Calculate Fees button - bottom right -->
+        <Button
+            android:id="@+id/calculateFeesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Fees"
+            android:textColor="#000000"
+            android:backgroundTint="#c4a092"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
     </RelativeLayout>
 </LinearLayout>
