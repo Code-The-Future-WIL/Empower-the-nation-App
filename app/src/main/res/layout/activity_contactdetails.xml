@@ -153,7 +153,7 @@
                 android:layout_marginBottom="16dp"
                 android:visibility="gone"/>
 
-            <!-- Map Image Display -->
+            <!-- Map Title -->
             <TextView
                 android:id="@+id/mapTitleText"
                 android:layout_width="match_parent"
@@ -165,13 +165,12 @@
                 android:layout_marginBottom="8dp"
                 android:visibility="gone"/>
 
-            <ImageView
-                android:id="@+id/mapImageView"
+            <!-- Google Maps WebView -->
+            <WebView
+                android:id="@+id/mapWebView"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="fitCenter"
+                android:layout_height="300dp"
                 android:background="#e0e0e0"
-                android:contentDescription="Venue Location Map"
                 android:visibility="gone"
                 android:layout_marginBottom="16dp"/>
         </LinearLayout>
